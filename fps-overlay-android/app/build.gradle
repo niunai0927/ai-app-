@@ -1,0 +1,33 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.dsh.fpsoverlay'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.dsh.fpsoverlay"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    // 不依赖 AndroidX，整个 App 只用系统框架 API，减少打包时的依赖下载失败风险。
+}
+
+dependencies {
+}

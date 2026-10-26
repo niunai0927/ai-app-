@@ -1,0 +1,5 @@
+// 顶层构建脚本。AGP 8.2.2 对应 Android Studio Hedgehog (2023.1.1) 及以上。
+// 如果你的 Studio 提示升级 AGP，可以直接选择「Don't remind me」/取消，当前版本是可用的。
+plugins {
+    id 'com.android.application' version '8.2.2' apply false
+}
